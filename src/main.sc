@@ -1,5 +1,7 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
+require: main.js  
+  
 theme: /
 
     state: Start
@@ -20,4 +22,5 @@ theme: /
 
     state: Match
         event!: match
-        a: {{$context.intent.answer}}
+        a: 2 * 3
+            
