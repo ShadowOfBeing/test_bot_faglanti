@@ -1,5 +1,5 @@
 function calc(option) {
-    var digits = $jsapi.contrext().request.query.split(" ")
+    var digits = $jsapi.context().request.query.split(" ")
     var digitOne = parseInt(digits[0])
     var digitTwo = parseInt(digits[1])
     var result
