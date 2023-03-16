@@ -82,7 +82,8 @@ theme: /
         q!: меню
         a: что хотите узнать?
         script:
-            $reactions.buttons([{text: "заготовители", transition: "/Zagotoviteli"}, {text: "переработчики", transition: "/Pererabotchiki"}])
+            $reactions.buttons(["Одна кнопка", "И другая в том же ряду"])
+            //$reactions.buttons([{text: "заготовители", transition: "/Zagotoviteli"}, {text: "переработчики", transition: "/Pererabotchiki"}])
 
         # buttons:
         #     "заготовители" -> /Zagotoviteli
