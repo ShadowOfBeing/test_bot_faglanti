@@ -81,15 +81,11 @@ theme: /
     state: Menu
         q!: меню
         a: что хотите узнать?
-        script:
-            $reactions.buttons(["Одна", "Вторая"])
-            //$reactions.buttons([{text: "заготовители", transition: "/Zagotoviteli"}, {text: "переработчики", transition: "/Pererabotchiki"}])
-
-        # buttons:
-        #     "заготовители" -> /Zagotoviteli
-        #     "переработчики" -> /Pererabotchiki
-        #     "наши волонтёры" -> /Volontieru
-        #     "ближайшие мероприятия" -> /Meropriyatiya
+        buttons:
+            "заготовители" -> /Zagotoviteli
+            "переработчики" -> /Pererabotchiki
+            "наши волонтёры" -> /Volontieru
+            "ближайшие мероприятия" -> /Meropriyatiya
     
     state: Zagotoviteli
         q!: заготовители
