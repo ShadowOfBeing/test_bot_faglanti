@@ -80,9 +80,10 @@ theme: /
                    
     state: Menu
         q!: меню
+        a: что хотите узнать?
         script:
-            $reactions.answer("что хотите узнать?");
-            $reactions.inlineButtons({text: "заготовители", transition: "/Zagotoviteli"}, {text: "переработчики", transition: "/Pererabotchiki"});
+            $reactions.buttons({text: "заготовители", transition: "/Zagotoviteli"}, {text: "переработчики", transition: "/Pererabotchiki"})
+
         # buttons:
         #     "заготовители" -> /Zagotoviteli
         #     "переработчики" -> /Pererabotchiki
