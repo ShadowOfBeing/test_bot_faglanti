@@ -1,8 +1,23 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
 require: main.js  
-  
+
 theme: /
+    init:
+        bind("postProcess", function($context) {
+            $context.session.lastActiveTime = $jsapi.currentTime();
+        });
+    
+        bind("preProcess", function($context) {
+            if ($context.session.lastActiveTime) {
+                var interval = $jsapi.currentTime() - $context.session.lastActiveTime;
+                if (interval > 10000) {
+                    $jsapi.startSession();
+                    $reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
+                    $session.startNewSession = true;
+                }
+            }
+        });
 
     state: Start
         q!: $regex</start>
@@ -63,6 +78,7 @@ theme: /
                    
     state: Menu
         q!: меню
+        a: {{$jsapi.currentTime()}}
         buttons:
             "сложить" -> /Calculator/Plus
             "вычесть" -> /Calculator/Minus
