@@ -81,13 +81,17 @@ theme: /
     state: Menu
         q!: меню
         a: что хотите узнать?
-        buttons:
-            "заготовители" -> /Zagotoviteli
-            "переработчики" -> /Pererabotchiki
-            "наши волонтёры" -> /Volontieru
-            "ближайшие мероприятия" -> /Meropriyatiya
+        inlineButtons:
+            {text:"заготовители", callback_data: "заготовители"}
+            {text:"тест", callback_data: "тест"}
+        # buttons:
+        #     "заготовители" -> /Zagotoviteli
+        #     "переработчики" -> /Pererabotchiki
+        #     "наши волонтёры" -> /Volontieru
+        #     "ближайшие мероприятия" -> /Meropriyatiya
     
     state: Zagotoviteli
+        q!: заготовители
         script:
             getAnswer('заготовители')
     
