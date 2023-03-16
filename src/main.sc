@@ -4,7 +4,7 @@ require: main.js
 
 theme: /
     init:
-        $global.timeout = 5000;
+        $global.timeout = 120000;
         
         bind("postProcess", function($context) {
             $context.session.lastActiveTime = $jsapi.currentTime();
