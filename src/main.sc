@@ -81,9 +81,9 @@ theme: /
     state: Menu
         q!: меню
         a: что хотите узнать?
-        inlineButtons:
-            {text:"заготовители", callback_data: "заготовители"}
-            {text:"тест", callback_data: "тест"}
+        script:
+            $reactions.inlineButtons({text: "заготовители", transition: "/Zagotoviteli"});
+            $reactions.inlineButtons({text: "переработчики", transition: "/Pererabotchiki"});
         # buttons:
         #     "заготовители" -> /Zagotoviteli
         #     "переработчики" -> /Pererabotchiki
