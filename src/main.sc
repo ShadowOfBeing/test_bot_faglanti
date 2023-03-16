@@ -4,6 +4,8 @@ require: main.js
 
 theme: /
     init:
+        $global.timeout = 5000;
+        
         bind("postProcess", function($context) {
             $context.session.lastActiveTime = $jsapi.currentTime();
         });
@@ -11,7 +13,7 @@ theme: /
         bind("preProcess", function($context) {
             if ($context.session.lastActiveTime) {
                 var interval = $jsapi.currentTime() - $context.session.lastActiveTime;
-                if (interval > 10000) {
+                if (interval > $timeout) {
                     $jsapi.startSession();
                     $reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
                     $session.startNewSession = true;
