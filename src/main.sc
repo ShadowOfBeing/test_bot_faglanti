@@ -80,7 +80,6 @@ theme: /
                    
     state: Menu
         q!: меню
-        a: {{$jsapi.currentTime()}}
         buttons:
             "заготовители" -> /Zagotoviteli
             "переработчики" -> /Pererabotchiki
