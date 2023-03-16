@@ -37,6 +37,8 @@ theme: /
     state: NoMatch
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
+        script:
+            $reactions.buttons({text: "Меню", transition: "/Menu"})
 
     state: Calculator
         q!: посчитай
