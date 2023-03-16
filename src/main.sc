@@ -16,7 +16,7 @@ theme: /
                 if (interval > $global.timeout) {
                     $jsapi.startSession();
                     //$reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
-                    $session.startNewSession = true;
+                    $context.session.startNewSession = true;
                 }
             }
         });
