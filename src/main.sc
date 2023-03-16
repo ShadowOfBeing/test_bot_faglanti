@@ -13,7 +13,7 @@ theme: /
         bind("preProcess", function($context) {
             if ($context.session.lastActiveTime) {
                 var interval = $jsapi.currentTime() - $context.session.lastActiveTime;
-                if (interval > $timeout) {
+                if (interval > $global.timeout) {
                     $jsapi.startSession();
                     $reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
                     $session.startNewSession = true;
