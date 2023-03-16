@@ -28,7 +28,6 @@ theme: /
             "вычесть" -> /Calculator/Minus
             "умножить" -> /Calculator/Multi
             "поделить" -> /Calculator/Divison
-            
         state: Plus
             a: напишите два числа
             
