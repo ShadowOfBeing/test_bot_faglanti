@@ -27,7 +27,8 @@ theme: /
             "сложить" -> /Calculator/Plus
             "вычесть" -> /Calculator/Minus
             "умножить" -> /Calculator/Multi
-            "поделить" -> /Calculator/Divison
+            "поделить" -> /Calculator/Division
+
         state: Plus
             a: напишите два числа
             
@@ -52,13 +53,47 @@ theme: /
                 script:
                    calc('multi')
                    
-        state: Divison
+        state: Division
             a: напишите два числа
             
             state: Divison_
                 q: *
                 script:
-                   calc('division') 
+                   calc('division')
+                   
+    state: Menu
+        q!: меню
+        buttons:
+            "сложить" -> /Calculator/Plus
+            "вычесть" -> /Calculator/Minus
+            "умножить" -> /Calculator/Multi
+            "поделить" -> /Calculator/Division
     
     state: Continue
         a: стоит ли идти на интесив по питону?
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
