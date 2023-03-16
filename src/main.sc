@@ -80,6 +80,7 @@ theme: /
                    
     state: Menu
         q!: меню
+        a: что хотите узнать?
         buttons:
             "заготовители" -> /Zagotoviteli
             "переработчики" -> /Pererabotchiki
