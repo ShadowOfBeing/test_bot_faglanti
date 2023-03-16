@@ -103,6 +103,8 @@ theme: /
     state: Meropriyatiya
         script:
             getAnswer('ближайшие мероприятия')
+
+        
         
         
         

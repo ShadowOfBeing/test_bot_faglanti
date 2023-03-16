@@ -26,4 +26,5 @@ function getAnswer(option) {
     } else if (option == 'ближайшие мероприятия') {
         $reactions.answer('Ближайшие мероприятия:\n- Экодвор 20 марта\n- Мобильный пункт 26 марта')
     }
+    $reactions.buttons({text: в меню, transition: "/Menu"})
 }
