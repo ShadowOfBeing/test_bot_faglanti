@@ -82,14 +82,26 @@ theme: /
         q!: меню
         a: {{$jsapi.currentTime()}}
         buttons:
-            "сложить" -> /Calculator/Plus
-            "вычесть" -> /Calculator/Minus
-            "умножить" -> /Calculator/Multi
-            "поделить" -> /Calculator/Division
+            "заготовители" -> /Zagotoviteli
+            "переработчики" -> /Pererabotchiki
+            "наши волонтёры" -> /Volontieru
+            "ближайшие мероприятия" -> /Meropriyatiya
     
-    state: Continue
-        a: стоит ли идти на интесив по питону?
-        
+    state: Zagotoviteli
+        script:
+            getAnswer('заготовители')
+    
+    state: Pererabotchiki
+        script:
+            getAnswer('переработчики')
+            
+    state: Volontieru
+        script:
+            getAnswer('наши волонтёры')
+    
+    state: Meropriyatiya
+        script:
+            getAnswer('ближайшие мероприятия')
         
         
         
