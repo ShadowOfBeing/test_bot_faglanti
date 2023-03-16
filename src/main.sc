@@ -82,8 +82,8 @@ theme: /
         q!: меню
         a: что хотите узнать?
         script:
-            $reactions.inlineButtons({text: "заготовители", transition: "/Zagotoviteli"});
-            $reactions.inlineButtons({text: "переработчики", transition: "/Pererabotchiki"});
+            $reactions.inlineButtons({text: "заготовители", transition: "/Zagotoviteli"},
+                                     {text: "переработчики", transition: "/Pererabotchiki"});
         # buttons:
         #     "заготовители" -> /Zagotoviteli
         #     "переработчики" -> /Pererabotchiki
