@@ -85,10 +85,10 @@ theme: /
         q!: меню
         a: что хотите узнать?
         buttons:
-            "заготовители" -> /Zagotoviteli
-            "переработчики" -> /Pererabotchiki
-            "наши волонтёры" -> /Volontieru
-            "ближайшие мероприятия" -> /Meropriyatiya
+            "Заготовители" -> /Zagotoviteli
+            "Переработчики" -> /Pererabotchiki
+            "Наши волонтёры" -> /Volontieru
+            "Ближайшие мероприятия" -> /Meropriyatiya
     
     state: Zagotoviteli
         q!: заготовители
