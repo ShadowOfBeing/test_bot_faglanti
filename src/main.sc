@@ -93,19 +93,19 @@ theme: /
     state: Zagotoviteli
         q!: заготовители
         script:
-            getAnswer('заготовители')
+            getAnswer('Заготовители')
     
     state: Pererabotchiki
         script:
-            getAnswer('переработчики')
+            getAnswer('Переработчики')
             
     state: Volontieru
         script:
-            getAnswer('наши волонтёры')
+            getAnswer('Наши волонтёры')
     
     state: Meropriyatiya
         script:
-            getAnswer('ближайшие мероприятия')
+            getAnswer('Ближайшие мероприятия')
 
         
         
