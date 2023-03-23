@@ -108,6 +108,7 @@ theme: /
             getAnswer('Ближайшие мероприятия')
     
     state: testButtons
+        q!: testbuttons
         a: тестовые кнопки
         inlineButtons:
             { text: "Заготовители", callback_data: "1" }
