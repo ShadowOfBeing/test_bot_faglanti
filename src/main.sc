@@ -106,6 +106,12 @@ theme: /
     state: Meropriyatiya
         script:
             getAnswer('Ближайшие мероприятия')
+    
+    state: testButtons
+        a: тестовые кнопки
+        inlineButtons:
+            { text: "Заготовители", callback_data: "1" }
+            { text: "Переработчики", callback_data: "2" }
 
         
         
