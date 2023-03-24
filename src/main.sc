@@ -106,12 +106,16 @@ theme: /
     state: Meropriyatiya
         script:
             getAnswer('Ближайшие мероприятия')
+            
+    state: test
+        q!: qqq
+        a: www
     
-    state: testButtons
-        q!: testbuttons
-        a: тестовые кнопки
-        inlineButtons:
-            { text: "1", callback_data: "" }
+        state: testButtons
+            q!: testbuttons
+            a: тестовые кнопки
+            inlineButtons:
+                { text: "1", callback_data: "" }
 
         
         
