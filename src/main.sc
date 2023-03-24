@@ -111,8 +111,8 @@ theme: /
         q!: testbuttons
         a: тестовые кнопки
         inlineButtons:
-            { text: "Заготовители", transition: "/Meropriyatiya" }
-            { text: "Переработчики", transition: "/Volontieru" }
+            { text: "Заготовители" }
+            { text: "Переработчики" }
 
         
         
