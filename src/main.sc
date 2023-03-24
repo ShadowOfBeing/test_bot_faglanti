@@ -110,9 +110,8 @@ theme: /
     state: testButtons
         q!: testbuttons
         a: тестовые кнопки
-        inlineButtons:
-            { text: "Заготовители" }
-            { text: "Переработчики" }
+        script:
+            testButtons()
 
         
         

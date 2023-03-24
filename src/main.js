@@ -38,3 +38,7 @@ function getAnswer(option) {
     }
     $reactions.buttons({text: "Меню", transition: "/Menu"})
 }
+
+function testButtons() {
+    $reactions.inlineButtons({text: "Меню", transition: "/Menu"})
+}
