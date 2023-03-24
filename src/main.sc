@@ -112,7 +112,6 @@ theme: /
         a: тестовые кнопки
         inlineButtons:
             { text: "1", callback_data: "" }
-            { text: "2", callback_data: "" }
 
         
         
