@@ -110,8 +110,11 @@ theme: /
     state: testButtons
         q!: testbuttons
         a: тестовые кнопки
-        script:
-            testButtons()
+        buttons([
+          {"title": "Option 1", "payload": "option1"},
+          {"title": "Option 2", "payload": "option2"},
+          {"title": "Option 3", "payload": "option3"}
+        ], type='inline')
 
         
         
