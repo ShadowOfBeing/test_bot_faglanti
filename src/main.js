@@ -55,4 +55,5 @@ function instructions(option) {
     } else if (option == 2) {
         $reactions.answer('answer')
     }
+    $reactions.buttons({text: "Меню", transition: "/Menu"})
 }
