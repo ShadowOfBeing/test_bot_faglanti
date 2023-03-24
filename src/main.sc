@@ -110,8 +110,9 @@ theme: /
     state: testButtons
         q!: testbuttons
         a: тестовые кнопки
-        script:
-            testButtons()
+        inlineButtons:
+            { text: "1", callback_data: "" }
+            { text: "2", callback_data: "" }
 
         
         
