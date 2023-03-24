@@ -17,7 +17,7 @@ theme: /
                     $jsapi.startSession();
                     //$reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
                     $context.session.startNewSession = true;
-                    $reactions.buttons({text: "Меню", transition: "/Menu"})
+                    //$reactions.buttons({text: "Меню", transition: "/Menu"})
                 }
             }
         });
