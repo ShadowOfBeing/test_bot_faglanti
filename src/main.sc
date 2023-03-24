@@ -17,7 +17,7 @@ theme: /
                     $jsapi.startSession();
                     //$reactions.newSession( {message: 'Новая сессия началась', session: $context.session } );
                     $context.session.startNewSession = true;
-                    //$reactions.buttons({text: "Меню", transition: "/Menu"})
+                    $reactions.buttons({text: "Меню", transition: "/Menu"})
                 }
             }
         });
@@ -89,6 +89,7 @@ theme: /
             "Переработчики" -> /Pererabotchiki
             "Наши волонтёры" -> /Volontieru
             "Ближайшие мероприятия" -> /Meropriyatiya
+            "Инструкции" -> /Instructions
     
     state: Zagotoviteli
         q!: заготовители
@@ -107,14 +108,25 @@ theme: /
         script:
             getAnswer('Ближайшие мероприятия')
     
+    state: Instructions
+        a: выберите инструкцию
+        buttons:
+            "Отправка вторсырья" -> /Instructions/Instructions1
+            "Ссылка текстом" -> /Instructions/Instructions2
+            
+        state: Instructions1
+            script:
+                instructions(1)
+                
+        state: Instructions2
+            script:
+                instructions(2)
+    
     state: testButtons
         q!: testbuttons
         a: тестовые кнопки
-        buttons([
-          {"title": "Option 1", "payload": "option1"},
-          {"title": "Option 2", "payload": "option2"},
-          {"title": "Option 3", "payload": "option3"}
-        ], type='inline')
+        script:
+            testButtons()
 
         
         
