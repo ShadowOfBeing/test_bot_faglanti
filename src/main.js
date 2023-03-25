@@ -18,7 +18,7 @@ function calc(option) {
 
 function getAnswer(option) {
     if (option == 'Заготовители') {
-        $reactions.answer('Заготовители в Казани:\n- Быстрофф\n- Фракция\n- Вторплюс\n- Экосбор')
+        $reactions.answer('Заготовители в Казани:\n- Быстрофф\n- Фракция\n- Вторплюс\n- Экосбор\n- Экополимер')
     } else if (option == 'Переработчики') {
         $reactions.answer('Переработчики в Казани:\n- Кряж')
     } else if (option == 'Наши волонтёры') {
