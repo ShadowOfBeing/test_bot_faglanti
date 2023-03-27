@@ -90,6 +90,7 @@ theme: /
             "Наши волонтёры" -> /Volontieru
             "Ближайшие мероприятия" -> /Meropriyatiya
             "Инструкции" -> /Instructions
+            "Чаты" -> /Chats
     
     state: Zagotoviteli
         q!: заготовители
@@ -121,6 +122,9 @@ theme: /
         state: Instructions2
             script:
                 instructions(2)
+                
+    state: Chats
+        a: Тут будет список чатов
     
     state: testButtons
         q!: testbuttons
