@@ -127,6 +127,8 @@ theme: /
                 
     state: Chats
         a: Тут будет список чатов
+        buttons:
+            "Меню" -> /Menu
     
     state: testButtons
         q!: testbuttons
