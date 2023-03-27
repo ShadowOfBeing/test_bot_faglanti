@@ -87,12 +87,11 @@ theme: /
         buttons:
             "Заготовители" -> /Zagotoviteli
             "Переработчики" -> /Pererabotchiki
-            "Наши волонтёры" -> /Volontieru
-            "Ближайшие мероприятия" -> /Meropriyatiya
-            "Инструкции" -> /Instructions
             "Чаты" -> /Chats
-            "Инструкцци" -> /Instructions
-            "Чатууукен" -> /Chats
+            "Волонтёры" -> /Volontieru
+            "Инструкции" -> /Instructions
+            "Ближайшие мероприятия" -> /Meropriyatiya
+            
     
     state: Zagotoviteli
         q!: заготовители
