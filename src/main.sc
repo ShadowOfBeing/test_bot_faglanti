@@ -91,8 +91,8 @@ theme: /
             "Ближайшие мероприятия" -> /Meropriyatiya
             "Инструкции" -> /Instructions
             "Чаты" -> /Chats
-            "Инструкци" -> /Instructions
-            "Чат" -> /Chats
+            "Инструкциии" -> /Instructions
+            "Чатуу" -> /Chats
     
     state: Zagotoviteli
         q!: заготовители
