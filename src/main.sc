@@ -91,7 +91,7 @@ theme: /
             "Ближайшие мероприятия" -> /Meropriyatiya
             "Инструкции" -> /Instructions
             "Чаты" -> /Chats
-            "Инструкции" -> /Instructions
+            "Инструкцци" -> /Instructions
             "Чатууукен" -> /Chats
     
     state: Zagotoviteli
