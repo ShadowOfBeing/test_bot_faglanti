@@ -92,7 +92,7 @@ theme: /
             "Инструкции" -> /Instructions
             "Чаты" -> /Chats
             "Инструкциии" -> /Instructions
-            "Чатууукенгшор" -> /Chats
+            "Чатууукенгш" -> /Chats
     
     state: Zagotoviteli
         q!: заготовители
